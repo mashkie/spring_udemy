@@ -1,0 +1,28 @@
+### Get all employees
+GET localhost:8080/magic-api/employees
+
+### Get an employee by id
+GET localhost:8080/magic-api/employees/6
+
+### Post create a new employee
+POST localhost:8080/magic-api/employees
+content-type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "doe@luv2code.com"
+}
+
+### PUT update a new employee
+PUT localhost:8080/magic-api/employees/11
+content-type: application/json
+
+{
+  "firstName": "Marry",
+  "lastName": "Lamb",
+  "email": "lamb@luv2code.com"
+}
+
+### Delete an employee by id
+DELETE localhost:8080/magic-api/employees/11

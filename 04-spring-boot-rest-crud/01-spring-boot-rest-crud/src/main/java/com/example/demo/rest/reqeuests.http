@@ -1,0 +1,14 @@
+### Demo
+GET localhost:8080/test/hello
+
+### Get all students
+GET localhost:8080/api/students
+
+### Get a student by id
+GET localhost:8080/api/student/0
+
+### Get a student by id - not found request
+GET localhost:8080/api/student/999
+
+### Get a student by id - bad request
+GET localhost:8080/api/student/asdf

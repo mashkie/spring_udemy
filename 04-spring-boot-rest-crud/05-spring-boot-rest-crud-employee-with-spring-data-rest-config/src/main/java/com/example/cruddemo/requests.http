@@ -1,0 +1,34 @@
+### Get all employees
+GET localhost:8080/magic-api/members
+
+### Get all employees - sort by last name
+GET localhost:8080/magic-api/members?sort=lastName
+
+### Get all employees - sort by last name descending
+GET localhost:8080/magic-api/members?sort=lastName,desc
+
+### Get an employee by id
+GET localhost:8080/magic-api/members/6
+
+### Post create a new employee
+POST localhost:8080/magic-api/members
+content-type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "doe@luv2code.com"
+}
+
+### PUT update a new employee
+PUT localhost:8080/magic-api/members/11
+content-type: application/json
+
+{
+  "firstName": "Marry",
+  "lastName": "Lamb",
+  "email": "lamb@luv2code.com"
+}
+
+### Delete an employee by id
+DELETE localhost:8080/magic-api/members/11
