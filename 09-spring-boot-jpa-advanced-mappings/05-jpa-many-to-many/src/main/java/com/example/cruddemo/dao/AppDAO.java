@@ -1,8 +1,6 @@
 package com.example.cruddemo.dao;
 
-import com.example.cruddemo.entity.Course;
-import com.example.cruddemo.entity.Instructor;
-import com.example.cruddemo.entity.InstructorDetail;
+import com.example.cruddemo.entity.*;
 
 import java.util.List;
 
@@ -28,4 +26,16 @@ public interface AppDAO {
     Course findCourseById(int theId);
 
     void deleteCourseById(int theId);
+
+    void save(Course theCourse);
+
+    Course findCourseAndReviewsByCourseId(int theId);
+
+    Course findCourseAndStudentsByCourseId(int theId);
+
+    Student findStudentAndCoursesByStudentId(int theId);
+
+    void update(Student tempStudent);
+
+    void deleteStudentById(int theId);
 }
